@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_color"
+    >
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            />
+        
+        <ImageView
+            android:id="@+id/button_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_button_speak"
+            android:src="@drawable/ic_speak"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/empty"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+    <!-- Input search -->
+    <EditText 
+        android:id="@+id/edittext_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:hint="@string/search"
+        android:layout_marginTop="@dimen/margin_top_small"
+        />
+    
+    <!-- Sample search -->
+    <HorizontalScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@drawable/bg_sample_search"
+        >
+        
+	    <LinearLayout 
+	        android:id="@+id/main_sample_search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        >
+	        
+	    </LinearLayout>
+	    
+    </HorizontalScrollView>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+		<ListView 	  	    
+		    android:id="@+id/listview_contact"
+		    android:layout_width="fill_parent" 	 	
+		 	android:layout_height="wrap_content"
+		 	android:scrollbars="none"
+		 	android:divider="@android:color/transparent"
+	  		android:clipToPadding="true"
+	  		android:fadingEdge="none"
+	  		android:persistentDrawingCache="animation|scrolling"
+	  		android:listSelector="@drawable/style_item_contact"
+	  		android:cacheColorHint="@android:color/transparent"
+		 	/>
+		
+		<TextView 
+	        android:id="@android:id/empty"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:text="@string/string_empty_list"
+		    android:textSize="@dimen/text_size_large"
+		    android:textStyle="italic"
+		    android:textColor="@color/color_blue"
+		    android:gravity="center"
+		    />
+	</RelativeLayout>
+        
+</LinearLayout>  

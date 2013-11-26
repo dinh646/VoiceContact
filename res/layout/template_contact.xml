@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/main_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_item_contact"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        >
+        
+        <Button
+            android:id="@+id/button_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_button_call"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:contentDescription="@string/empty"
+            android:focusable="false"
+            />
+        
+        <!-- Avatar holder -->
+        <RelativeLayout 
+            android:id="@+id/layout_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_holder"
+                android:focusable="false"
+                />
+            <ProgressBar
+		        android:id="@+id/progressbar_avatar" 
+		        android:focusable="false"
+		        android:layout_width="@dimen/progressbar_size"       
+		        android:layout_height="@dimen/progressbar_size"
+		        android:layout_centerInParent="true"
+		        android:visibility="gone"
+			    /> 
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/layout_avatar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginRight="@dimen/margin_right_large"
+            >
+            
+            <TextView 
+                android:id="@+id/textview_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Monkey D Luffy"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_medium"
+                android:focusable="false"
+                />
+            
+            <TextView 
+                android:id="@+id/textview_no_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="01665847747"
+                android:textColor="@color/color_phone_number"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginTop="@dimen/margin_top_small"
+                android:layout_below="@+id/textview_name"
+                android:focusable="false"
+                />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/v_divider"
+        android:layout_below="@+id/main_item"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

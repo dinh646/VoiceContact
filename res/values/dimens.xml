@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Dimens margin tiny -->
+    <dimen name="margin_tiny">4dip</dimen>
+    <dimen name="margin_top_tiny">4dp</dimen>
+    <dimen name="margin_left_tiny">4dip</dimen>
+    <dimen name="margin_bottom_tiny">4dip</dimen>
+    <dimen name="margin_right_tiny">4dip</dimen>
+    
+    <!-- Dimens margin small -->
+    <dimen name="margin_small">5dip</dimen>
+    <dimen name="margin_top_small">5dp</dimen>
+    <dimen name="margin_left_small">7dip</dimen>
+    <dimen name="margin_bottom_small">5dip</dimen>
+    <dimen name="margin_right_small">5dip</dimen>
+    
+    <!-- Dimens margin normal -->
+    <dimen name="margin_normal">16dip</dimen>
+    <dimen name="margin_top_normal">16dp</dimen>
+    <dimen name="margin_left_normal">16dip</dimen>
+    <dimen name="margin_bottom_normal">16dip</dimen>
+    <dimen name="margin_right_normal">16dip</dimen>
+    
+    <!-- Dimens margin large -->
+    <dimen name="margin_large">30dip</dimen>
+    <dimen name="margin_top_large">30dp</dimen>
+    <dimen name="margin_left_large">30dip</dimen>
+    <dimen name="margin_bottom_large">30dip</dimen>
+    <dimen name="margin_right_large">30dip</dimen>
+    
+    <!-- Dimens margin xlarge -->
+    <dimen name="margin_xlarge">50dip</dimen>
+    <dimen name="margin_top_xlarge">50dp</dimen>
+    <dimen name="margin_left_xlarge">50dip</dimen>
+    <dimen name="margin_bottom_xlarge">50dip</dimen>
+    <dimen name="margin_right_xlarge">50dip</dimen>
+    
+    <!-- Dimens padding small -->
+	<dimen name="padding_small">5dip</dimen>
+    <dimen name="padding_top_small">5dip</dimen>
+    <dimen name="padding_left_small">5dip</dimen>
+    <dimen name="padding_bottom_small">5dip</dimen>
+    <dimen name="padding_right_small">5dip</dimen>
+    
+    <!-- Text size -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    
+    <!-- Size progressbar -->
+	<dimen name="progressbar_size">5dip</dimen>
+</resources>

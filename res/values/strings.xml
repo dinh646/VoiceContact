@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Voice Contact</string>
+    <string name="empty"></string>
+    <string name="search">Search&#8230;</string>
+    <string name="string_empty_list">Empty list</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
